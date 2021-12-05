@@ -1,4 +1,4 @@
-// Call zombify with input string
+// zombify the input string
 function convertString() {
 
     var inputStringValue = document.getElementById("stringInput").value;
@@ -6,7 +6,7 @@ function convertString() {
     document.getElementById("stringOutput").innerHTML = zombify(inputStringValue);
 }
 
-// Throw errors beside the convert button
+// Throw errors beside the convert button (unused for the time being)
 function throwError(errorString) {
     document.getElementById("errorText").innerHTML = errorString;
 }

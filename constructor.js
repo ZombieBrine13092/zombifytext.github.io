@@ -1,26 +1,207 @@
-var currentCharIndex = 0;
-
+// Return the numerical value of every character in one string
 function zombify(inputString) {
-
-    var inputLength = inputString.length;
-    if (inputLength === 0) {
-        throwError("String is empty; result will not have a data structure other than the validator");
-        return "000";
+    let constructorOutput = "000";
+    for (let char of inputString) {
+      constructorOutput += numericalize(char);
     }
-
-    while (currentCharIndex >=! inputLength) {
-        construct();
-        return
-    }
-
     return constructorOutput;
-}
+  }
 
-function construct() {
-
-    var constructorOutput = "000";
-    var constructorAddition;
-
-    constructorOutput = constructorOutput.concat(constructorAddition);
-
-}
+// Character database
+// Return numerical value for character at specified string
+function numericalize(char) {
+    switch (char) {
+      case "A":
+        return "011";
+      case "a":
+        return "010";
+      case "B":
+        return "021";
+      case "b":
+        return "020";
+      case "C":
+        return "031";
+      case "c":
+        return "030";
+      case "D":
+        return "041";
+      case "d":
+        return "040";
+      case "E":
+        return "051";
+      case "e":
+        return "050";
+      case "F":
+        return "061";
+      case "f":
+        return "060";
+      case "G":
+        return "071";
+      case "g":
+        return "070";
+      case "H":
+        return "081";
+      case "h":
+        return "080";
+      case "I":
+        return "091";
+      case "i":
+        return "090";
+      case "J":
+        return "101";
+      case "j":
+        return "100";
+      case "K":
+        return "111";
+      case "k":
+        return "110";
+      case "L":
+        return "121";
+      case "l":
+        return "120";
+      case "M":
+        return "131";
+      case "m":
+        return "130";
+      case "N":
+        return "141";
+      case "n":
+        return "140";
+      case "O":
+        return "151";
+      case "o":
+        return "150";
+      case "P":
+        return "161";
+      case "p":
+        return "160";
+      case "Q":
+        return "171";
+      case "q":
+        return "170";
+      case "R":
+        return "181";
+      case "r":
+        return "180";
+      case "S":
+        return "191";
+      case "s":
+        return "190";
+      case "T":
+        return "201";
+      case "t":
+        return "200";
+      case "U":
+        return "211";
+      case "u":
+        return "210";
+      case "V":
+        return "221";
+      case "v":
+        return "220";
+      case "W":
+        return "231";
+      case "w":
+        return "230";
+      case "X":
+        return "241";
+      case "x":
+        return "240";
+      case "Y":
+        return "251";
+      case "y":
+        return "250";
+      case "Z":
+        return "261";
+      case "z":
+        return "260";
+      case "`":
+        return "270";
+      case "~":
+        return "280";
+      case "!":
+        return "290";
+      case "@":
+        return "300";
+      case "#":
+        return "310";
+      case "$":
+        return "320";
+      case "%":
+        return "330";
+      case "^":
+        return "340";
+      case "&":
+        return "350";
+      case "*":
+        return "360";
+      case "(":
+        return "370";
+      case ")":
+        return "380";
+      case "-":
+        return "390";
+      case "==":
+        return "400";
+      case "[":
+        return "410";
+      case "]":
+        return "420";
+      case "\\":
+        return "430";
+      case ";":
+        return "440";
+      case "'":
+        return "450";
+      case ",":
+        return "460";
+      case ".":
+        return "470";
+      case "/":
+        return "480";
+      case "_":
+        return "490";
+      case "+":
+        return "500";
+      case "{":
+        return "510";
+      case "}":
+        return "520";
+      case "|":
+        return "530";
+      case ":":
+        return "540";
+      case '"':
+        return "550";
+      case "<":
+        return "560";
+      case ">":
+        return "570";
+      case "?":
+        return "580";
+      case " ":
+        return "590";
+      case "0":
+        return "600";
+      case "1":
+        return "610";
+      case "2":
+        return "620";
+      case "3":
+        return "630";
+      case "4":
+        return "640";
+      case "5":
+        return "650";
+      case "6":
+        return "660";
+      case "7":
+        return "670";
+      case "8":
+        return "680";
+      case "9":
+        return "690";
+      default:
+        return "001";
+    }
+  }
